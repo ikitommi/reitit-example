@@ -1,0 +1,9 @@
+{:deps {:aliases [:dev :common :frontend]}
+ :nrepl {:port 6666}
+ :builds {:app {:target :browser
+                :output-dir "dev-resources/public/js"
+                :asset-path "/js"
+                :modules {:main {:entries [example.frontend.main]}}
+                :compiler-options {:closure-defines {"re_frame.trace.trace_enabled_QMARK_" true}}
+                :devtools {:preloads [devtools.preload
+                                      day8.re-frame-10x.preload]}}}}

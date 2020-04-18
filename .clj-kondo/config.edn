@@ -1,0 +1,6 @@
+{:skip-comments true
+ :linters {:if {:level :off}
+           :unused-binding {:level :off}
+           :unused-referred-var {:exclude {clojure.test [deftest testing is are]
+                                           cljs.test [deftest testing is are]
+                                           integrant.repl [clear go halt init prep reset reset-all]}}}}

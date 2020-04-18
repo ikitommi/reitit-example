@@ -1,0 +1,8 @@
+#kaocha/v1
+{:reporter #profile {:ci kaocha.report/documentation
+                     :default kaocha.report/dots}
+ :color? true
+ :tests [{:id :unit
+          :skip-meta [:integration]}
+         {:id :integration
+          :focus-meta [:integration]}]}

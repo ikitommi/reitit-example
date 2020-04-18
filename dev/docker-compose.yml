@@ -1,0 +1,12 @@
+version: '2'
+services:
+  db:
+    build: ./postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./postgres/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
+    environment:
+      POSTGRES_DB: example
+      POSTGRES_USER: example
+      POSTGRES_PASSWORD: example

@@ -1,0 +1,20 @@
+/dev-resources/public/js
+/node_modules
+/target
+/yarn.lock
+/package-lock.json
+/.shadow-cljs
+/*.iml
+/.nrepl-port
+/.idea
+/.cpcache
+/prod-resources
+.history
+# This is kube manual testing.
+/kube
+/lsp
+/out
+tmp/
+trace.edn
+
+.clj-kondo/.cache
