@@ -57,3 +57,6 @@
 
 (def http-get (partial http client/get))
 (def http-post (partial http client/post))
+
+(defn dispatch [[action data]]
+  (:body (http-post "/api/dispatch" {:body {:action action, :data data}})))
