@@ -11,3 +11,6 @@ WHERE id = :id;
 INSERT INTO example.pizza (name, size, price, origin)
 VALUES (:name, :size, :price, :origin)
 RETURNING *;
+
+-- :name sql-remove-pizzas :!
+TRUNCATE example.pizza

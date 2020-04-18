@@ -52,7 +52,7 @@
                       :as :auto
                       ;:debug true
                       :content-type "application/json"
-                      :throw-exceptions false}
+                      :throw-exceptions true}
                      request))))))
 
 (def http-get (partial http client/get))

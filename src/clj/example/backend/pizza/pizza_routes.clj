@@ -16,7 +16,7 @@
                :responses {status/ok {:body pizza/Pizza}}
                :handler (fn [request]
                           (let [pizza (-> request :parameters :body)]
-                            (r/ok (pizza-db/insert-pizza db pizza))))}}]
+                            (r/ok (pizza-db/insert-pizza! db pizza))))}}]
 
    ["/:id" {:get {:summary "get a pizza"
                   :parameters {:path [:map [:id int?]]}

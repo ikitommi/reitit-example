@@ -1,4 +1,4 @@
-(ns example.backend.api-test
+(ns example.backend.http-api-test
   (:require [clojure.test :refer :all]
             [example.backend.test-system :as ts]))
 
